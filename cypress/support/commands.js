@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import 'cypress-file-upload';
+
+Cypress.Commands.add('clickLink', (name,path) => {
+  cy.get(path)
+  .type(name)
+  .should('have.value',name);
+})

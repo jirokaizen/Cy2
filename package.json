@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "appium": "^1.22.3",
-    "cypress": "^12.9.0"
+    "cypress": "^12.9.0",
+    "cypress-file-upload": "^5.0.8"
   }
 }

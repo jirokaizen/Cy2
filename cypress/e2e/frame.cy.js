@@ -6,7 +6,7 @@ describe('Exercise',function(){
     before(function(){
 
         //visit the application url
-        cy.visit('http://only-testing-blog.blogspot.com/2013/11/new-test.html')
+        cy.visit('https://the-internet.herokuapp.com/iframe')
 
     })
 
@@ -14,7 +14,11 @@ it('Evaluate the CSS elements',function(){
 
 
     //First Name text field
-    cy.clickLink('Steven','input[name=fname]')
+    cy.get('#mce_0_ifr')
+    .its('0.')
+    click().type("hehehe")
+    //cy.xpath('//body[@id=tinymce]').click().type("hehehe")
+
     // cy.get()
     // .should('not.have.value')
     // .should('be.enabled')
